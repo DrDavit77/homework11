@@ -1,0 +1,66 @@
+.grid_container {
+    width: 1180px;
+    padding: 0 130px 48px 130px;
+    display: grid;
+    grid-template-columns: repeat(2, 380px 20px) 380px;
+    grid-template-rows: 120px 300px 20px 160px 64px 206px;
+    grid-template-areas: " Header Header Header Header Header"
+        " figure figure figure .  aside"
+        ". . . . aside"
+        " headtext . info . aside"
+        " . . . . ."
+        " card1 . card2 . card3 ";
+}
+
+header {
+    grid-area: Header;
+    display: inline-flex;
+    padding: 31px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 680px;
+}
+
+ul {
+    display: flex;
+    height: 19px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+figure {
+    grid-area: figure;
+    background-image: url(../img/banner.svg);
+    object-fit: cover;
+}
+
+.headtext {
+    grid-area: headtext;
+    background-color: cadetblue;
+}
+
+.main_info {
+    grid-area: info;
+    background-color: blueviolet;
+}
+
+aside {
+    background-color: blue;
+    grid-area: aside;
+}
+
+.card1 {
+    grid-area: card1;
+    background-color: black;
+}
+
+.card2 {
+    grid-area: card2;
+    background-color: aqua;
+}
+
+.card3 {
+    grid-area: card3;
+    background-color: brown;
+}
