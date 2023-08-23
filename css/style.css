@@ -37,12 +37,42 @@ figure {
 
 .headtext {
     grid-area: headtext;
-    background-color: cadetblue;
+    color: #000;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    width: 281px;
+
 }
 
 .main_info {
     grid-area: info;
-    background-color: blueviolet;
+    color: #484F5E;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+  
+}
+
+button {
+    display: flex;
+    height: 48px;
+    padding: 15px 54px 14px 53px;
+    justify-content: center;
+    align-items: center;
+    background: #F15D51;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    border: none;
+    margin-top: 35px;
 }
 
 aside {
@@ -79,7 +109,7 @@ aside {
     font-style: normal;
     font-weight: 700;
     line-height: 22px;
-    
+
 }
 
 .asidetext {
